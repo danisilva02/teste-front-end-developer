@@ -1,0 +1,11 @@
+node_modules/
+bower_components/
+app/
+project/
+exemplo-query/
+dashboard.png/
+dashborad.psd/
+modelorelacional.png/
+mysql_lib.js
+processo_Teste_Front.png
+task.psd
