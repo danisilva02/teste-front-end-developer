@@ -7,6 +7,7 @@
 # iniciando o projeto
 
 1. npm install;
-2. ./node_modules/.bin/gulp build;
-3. ./node_modules/.bin/gulp serve;
-4. Caso não conseguir vializar ultilize o comando ' live-server na pasta do projeto'
+2. bower install ou ./node_modules/.bin/bower install;
+3. ./node_modules/.bin/gulp build;
+4. ./node_modules/.bin/gulp serve;
+5. Caso não conseguir vializar ultilize o comando ' live-server na pasta app '
