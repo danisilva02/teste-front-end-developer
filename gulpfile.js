@@ -14,6 +14,7 @@ var gulp = require('gulp'),
     clean = require('gulp-clean'),
     del = require('del'),
     browserify = require('gulp-browserify'),
+    browserSync = require('live-server'),
     htmlmin = require('gulp-htmlmin');
 
 var onError = function (err) {
@@ -36,12 +37,12 @@ gulp.task('serve', function () {
         './app/js/**/*.js'
 
     ];
-    //
-    // browserSync.init(files, {
-    //     server: {
-    //         baseDir: './public'
-    //     }
-    // });
+    browserSync.init(files, {
+        server: {
+            baseDir: './app'
+        }
+    });
+
 });
 
 gulp.task('scss', function () {
@@ -81,19 +82,21 @@ gulp.task('default', ['cleanDist', 'jshint', 'babel'], function () {
 
 gulp.task('copyMinJsLib', ['cleanDist'], function () {
     gulp.src('bower_components/jquery/dist/jquery.min.js')
-        .pipe(rename("jquery-a.min.js"))
+        .pipe(rename("bootstrap-jquery-a.min.js"))
         .pipe(gulp.dest('app/js'));
     return gulp.src([
         'src/ang.js',
         'node_modules/chart.js/dist/Chart.min.js',
         'bower_components/sweetalert2/dist/sweetalert2.min.js',
         'bower_components/jquery-ui/jquery-ui.min.js',
+        'bower_components/bootstrap/dist/js/bootstrap.min.js'
         ])
         .pipe(gulp.dest('app/js'));
 });
 
 gulp.task('copyMinCssLib', ['cleanDist'], function () {
     return gulp.src([
+        'src/assets/estilo.css',
         'bower_components/sweetalert2/dist/sweetalert2.min.css',
         'bower_components/jquery-ui/themes/smoothness/jquery-ui.min.css'
         ])

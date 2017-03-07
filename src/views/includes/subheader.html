@@ -1,9 +1,7 @@
 <div class="sub-header">
-  <nav class="nav-header">
+  <nav class="nav-header" style="margin-left: 10px;">
     <ul>
-      <li>Dashboard 1</li>
-      <li>Dashboard 2</li>
-      <li>Dashboard 3</li>
+      <li ng-click="getDash(item)" id="{{item.link}}" ng-repeat="item in subheader">{{item.name}}</li>
     </ul>
   </nav>
 </div>
