@@ -10,4 +10,4 @@
 2. bower install ou ./node_modules/.bin/bower install;
 3. ./node_modules/.bin/gulp build;
 4. ./node_modules/.bin/gulp serve;
-5. Caso não conseguir vializar ultilize o comando ' live-server na pasta app '
+5. Caso não conseguir vizualizar ultilize o comando ' live-server na pasta app '
