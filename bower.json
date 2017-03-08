@@ -1,0 +1,34 @@
+{
+  "name": "Teste-icolabora",
+  "version": "3.0.0",
+  "homepage": "danisilva02.github.io",
+  "authors": [
+    "daniel silva miranda"
+  ],
+  "description": "teste-front-end-developer",
+  "main": "dist/index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "exemplo-query",
+    "dashboard.png",
+    "dashboard.psd",
+    "modelorelacional.png",
+    "mysql_lib.js",
+    "processo_Teste_Front.png",
+    "task.psd"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "animate.css": "^3.5.2",
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.7",
+    "jquery": "^1.12.1",
+    "jquery-ui": "^1.12.1",
+    "sweetalert2": "^5.2.0",
+    "angular-route": "^1.6.2"
+  }
+}
